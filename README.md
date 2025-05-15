@@ -6,6 +6,7 @@ npm run dev
 ## install packages
 
 npx @tailwindcss/upgrade 
+
 npm install react-router-dom
 
 ## important things
