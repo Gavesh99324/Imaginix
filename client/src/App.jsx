@@ -10,10 +10,11 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/result' element={<Result />} />
-        <Route path='/result' element={<BuyCredit />} />
+        <Route path='/buy' element={<BuyCredit />} />
       </Routes>
     </div>
   )
-}
+};
 
-export default App;
+export default App; 
+

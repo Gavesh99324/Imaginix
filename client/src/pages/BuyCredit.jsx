@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function BuyCredit() {
   return (
@@ -8,4 +8,4 @@ function BuyCredit() {
   )
 }
 
-export default BuyCredit
+export default BuyCredit;
