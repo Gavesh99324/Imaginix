@@ -22,7 +22,7 @@ function Navbar() {
         {
         user ?   
           <div className='flex items-center gap-2 sm:gap-3'>
-            <Button variant='contained' color='primary' className='flex items-center gap-2 bg-gradient-to-r from-cyan-500/50 to-blue-500/50 text-white hover:from-cyan-500 to-blue-500'>
+            <Button variant='contained' color='primary' sx={{borderRadius: '9999px'}} className='flex items-center gap-2 bg-gradient-to-r from-cyan-500/50 to-blue-500/50 text-white hover:from-cyan-500 to-blue-500'>
                 <StarOutlineIcon className="text-yellow-500 w-4 h-4"/>
                 <p className='text-xs sm:text-sm font-medium text-gray-600'>Credits left :</p>
             </Button>
