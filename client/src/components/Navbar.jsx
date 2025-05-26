@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@mui/material';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import StarOutlineIcon from '@mui/icons-material/StarOutline';
+import { AppContext } from '../context/AppContext';
 
 
 function Navbar() {
 
-    const [user, setUser] = useState(null);
-
-    const navigate = useNavigate();
+  const {user} = useContext(AppContext);
+ 
+  const navigate = useNavigate();
 
 
   return (
@@ -25,7 +26,7 @@ function Navbar() {
         {
         user ?   
           <div className='flex items-center gap-2 sm:gap-3'>
-            <Button variant='contained' color='primary' sx={{borderRadius: '9999px'}} className='flex items-center gap-2 bg-gradient-to-r from-cyan-500/50 to-blue-500/50 text-white hover:from-cyan-500 to-blue-500'>
+            <Button onClick={() => navigate('/buy')} variant='contained' color='primary' sx={{borderRadius: '9999px'}} className='flex items-center gap-2 bg-gradient-to-r from-cyan-500/50 to-blue-500/50 text-white hover:from-cyan-500 to-blue-500'>
                 <StarOutlineIcon className="text-yellow-500 w-4 h-4"/>
                 <p className='text-xs sm:text-sm font-medium text-gray-600'>Credits left :</p>
             </Button>
